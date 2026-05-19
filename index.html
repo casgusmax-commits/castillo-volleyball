@@ -15,14 +15,15 @@
     --gold-light: #e8c97a;
     --gray: #1e1e1e;
     --gray2: #252525;
-    --muted: #777;
+    --muted: #999;
+    --muted2: #bbb;
     --fd: 'Bebas Neue', sans-serif;
     --fb: 'DM Sans', sans-serif;
     --fm: 'DM Mono', monospace;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { background: var(--black); color: var(--white); font-family: var(--fb); font-weight: 300; line-height: 1.6; overflow-x: hidden; }
+  body { background: var(--black); color: var(--white); font-family: var(--fb); font-weight: 400; line-height: 1.7; overflow-x: hidden; }
 
   /* ── NAV ── */
   nav {
@@ -46,8 +47,8 @@
   .eyebrow::before { content:''; width: 2rem; height: 1px; background: var(--gold); flex-shrink: 0; }
   .h1 { font-family: var(--fd); font-size: clamp(3.8rem,7vw,7.2rem); line-height: .9; letter-spacing: .02em; margin-bottom: 1.8rem; }
   .h1 .g { color: var(--gold); }
-  .hero-sub { font-size: .95rem; color: rgba(245,243,238,.58); max-width: 400px; line-height: 1.88; margin-bottom: 2.8rem; }
-  .hero-sub strong { color: rgba(245,243,238,.85); font-weight: 400; }
+  .hero-sub { font-size: 1rem; color: rgba(245,243,238,.75); max-width: 400px; line-height: 1.9; margin-bottom: 2.8rem; }
+  .hero-sub strong { color: rgba(245,243,238,.95); font-weight: 500; }
   .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
   .btn-gold { font-family: var(--fm); font-size: .74rem; background: var(--gold); color: var(--black); padding: .85rem 2rem; letter-spacing: .08em; font-weight: 500; text-decoration: none; transition: all .2s; display: inline-block; }
   .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
@@ -94,9 +95,9 @@
   /* ── ABOUT ── */
   .about { background: var(--black); }
   .about-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 6rem; align-items: start; }
-  .about-copy { color: rgba(245,243,238,.6); font-size: .95rem; line-height: 1.92; }
+  .about-copy { color: rgba(245,243,238,.82); font-size: 1rem; line-height: 1.95; }
   .about-copy p { margin-bottom: 1.1rem; }
-  .about-copy strong { color: rgba(245,243,238,.88); font-weight: 500; }
+  .about-copy strong { color: rgba(245,243,238,.98); font-weight: 500; }
   .about-pull { margin: 2rem 0; padding: 1.4rem 1.6rem; border-left: 2px solid var(--gold); background: rgba(201,168,76,.04); }
   .about-pull p { font-size: .85rem; color: rgba(245,243,238,.55); line-height: 1.8; font-style: italic; margin: 0; }
   .about-pull cite { font-size: .7rem; color: var(--gold); font-style: normal; margin-top: .5rem; display: block; letter-spacing: .06em; }
@@ -129,10 +130,10 @@
   .pnum { font-family: var(--fd); font-size: 3rem; color: rgba(201,168,76,.09); line-height: 1; margin-bottom: .9rem; }
   .ptag { font-family: var(--fm); font-size: .58rem; letter-spacing: .15em; text-transform: uppercase; color: var(--gold); margin-bottom: .65rem; }
   .pname { font-size: 1.02rem; font-weight: 500; color: var(--white); margin-bottom: .65rem; }
-  .pdesc { font-size: .78rem; color: var(--muted); line-height: 1.75; margin-bottom: 1.4rem; }
+  .pdesc { font-size: .82rem; color: #aaa; line-height: 1.78; margin-bottom: 1.4rem; }
   .pinc { list-style: none; margin-bottom: 1.5rem; flex-grow: 1; }
-  .pinc li { font-size: .73rem; color: rgba(245,243,238,.5); padding: .28rem 0 .28rem 1rem; position: relative; border-bottom: 1px solid rgba(245,243,238,.04); line-height: 1.5; }
-  .pinc li::before { content:'—'; position: absolute; left: 0; color: var(--gold); font-size: .56rem; top: .4rem; }
+  .pinc li { font-size: .78rem; color: rgba(245,243,238,.72); padding: .3rem 0 .3rem 1rem; position: relative; border-bottom: 1px solid rgba(245,243,238,.06); line-height: 1.6; }
+  .pinc li::before { content:'—'; position: absolute; left: 0; color: var(--gold); font-size: .56rem; top: .42rem; }
   .pprice { font-family: var(--fd); font-size: 1.8rem; color: var(--white); margin-top: auto; }
   .pprice span { font-family: var(--fb); font-size: .7rem; color: var(--muted); font-weight: 300; }
   .pprice-note { font-size: .68rem; color: rgba(201,168,76,.7); margin-top: .3rem; }
@@ -169,7 +170,7 @@
   .pstep-tag { font-family: var(--fm); font-size: .58rem; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: .65rem; display: flex; align-items: center; gap: .5rem; }
   .pstep-tag .circle { width: 18px; height: 18px; border-radius: 50%; border: 1px solid rgba(201,168,76,.35); background: rgba(201,168,76,.08); display: inline-flex; align-items: center; justify-content: center; font-size: .58rem; color: var(--gold); flex-shrink: 0; }
   .pstep-title { font-size: .88rem; font-weight: 500; color: var(--white); margin-bottom: .52rem; }
-  .pstep-desc { font-size: .74rem; color: var(--muted); line-height: 1.8; }
+  .pstep-desc { font-size: .78rem; color: #aaa; line-height: 1.82; }
   .pstep-last { background: rgba(201,168,76,.03); border: 1px solid rgba(201,168,76,.1); }
 
   /* ── FOR WHO ── */
@@ -179,7 +180,41 @@
   .fwcard:hover { border-color: rgba(201,168,76,.2); }
   .fwicon { font-size: 1.7rem; margin-bottom: .9rem; }
   .fwtitle { font-size: .87rem; font-weight: 500; color: var(--white); margin-bottom: .5rem; }
-  .fwdesc { font-size: .74rem; color: var(--muted); line-height: 1.75; }
+  .fwdesc { font-size: .8rem; color: #aaa; line-height: 1.78; }
+
+  /* ── AFTER CALL TABS ── */
+  .after-tabs { display: flex; gap: 6px; margin-bottom: 1.2rem; flex-wrap: wrap; }
+  .after-tab { font-family: var(--fm); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; padding: .4rem 1rem; border: 1px solid rgba(245,243,238,.12); background: transparent; color: var(--muted); cursor: pointer; transition: all .2s; }
+  .after-tab:hover { border-color: rgba(201,168,76,.4); color: rgba(245,243,238,.7); }
+  .after-tab.active { background: rgba(201,168,76,.1); border-color: var(--gold); color: var(--gold); }
+  .after-panel { display: none; }
+  .after-panel.active { display: block; }
+  .after-panel p { font-size: .82rem; color: rgba(245,243,238,.72); line-height: 1.85; margin-bottom: .9rem; }
+  .after-panel strong { color: var(--white); font-weight: 500; }
+
+  /* ── PROGRAM ACCORDIONS ── */
+  .pexpand-btn { margin-top: 1.2rem; background: transparent; border: 1px solid rgba(201,168,76,.3); color: var(--gold); font-family: var(--fm); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; padding: .6rem 1.1rem; cursor: pointer; width: 100%; text-align: left; transition: all .2s; display: flex; justify-content: space-between; align-items: center; }
+  .pexpand-btn:hover { background: rgba(201,168,76,.06); border-color: var(--gold); }
+  .pexpand-btn .arrow { transition: transform .3s; font-size: .7rem; }
+  .pexpand-btn.open .arrow { transform: rotate(180deg); }
+  .pexpand-content { display: none; margin-top: 1.2rem; border-top: 1px solid rgba(245,243,238,.07); padding-top: 1.2rem; }
+  .pexpand-content.open { display: block; }
+  .pexpand-month { margin-bottom: 1rem; }
+  .pexpand-month-label { font-family: var(--fm); font-size: .6rem; letter-spacing: .15em; text-transform: uppercase; color: var(--gold); margin-bottom: .4rem; display: flex; align-items: center; gap: .5rem; }
+  .pexpand-month-label::before { content:''; width: 1rem; height: 1px; background: var(--gold); }
+  .pexpand-month p { font-size: .78rem; color: rgba(245,243,238,.72); line-height: 1.78; }
+  .pexpand-month strong { color: var(--white); font-weight: 500; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials { background: var(--black); padding: 6rem 4rem; }
+  .tgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 1.5rem; margin-top: 3rem; }
+  .tcard { background: var(--gray); border: 1px solid rgba(245,243,238,.07); padding: 2rem 1.8rem; position: relative; }
+  .tcard::before { content: '\201C'; font-family: Georgia, serif; font-size: 4rem; color: var(--gold); opacity: .25; position: absolute; top: .5rem; left: 1.2rem; line-height: 1; }
+  .tcard-quote { font-size: .88rem; color: rgba(245,243,238,.8); line-height: 1.82; margin-bottom: 1.2rem; padding-top: 1.5rem; font-style: italic; }
+  .tcard-author { font-family: var(--fm); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+  .tcard-role { font-size: .7rem; color: var(--muted); margin-top: .2rem; }
+  .tcard-placeholder { border: 1px dashed rgba(245,243,238,.1); background: transparent; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 180px; }
+  .tcard-placeholder p { font-size: .78rem; color: rgba(245,243,238,.2); line-height: 1.7; }
 
   /* ── CTA ── */
   .cta { background: var(--gold); padding: 5rem 4rem; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
@@ -222,6 +257,19 @@
     .cta { grid-template-columns: 1fr; }
     .strip { padding: 1rem 1.5rem; }
     footer { padding: 2rem 1.5rem; flex-direction: column; align-items: flex-start; }
+    /* MOBILE READABILITY */
+    body { font-size: 16px; }
+    .hero-sub { font-size: 1.05rem; color: rgba(245,243,238,.85); }
+    .pdesc { font-size: .9rem; color: #bbb; }
+    .pinc li { font-size: .85rem; color: rgba(245,243,238,.82); padding: .4rem 0 .4rem 1.1rem; }
+    .pstep-desc { font-size: .85rem; color: #bbb; line-height: 1.85; }
+    .fwdesc { font-size: .85rem; color: #bbb; }
+    .csub { font-size: .78rem; color: #aaa; }
+    .about-copy { font-size: 1.02rem; color: rgba(245,243,238,.88); }
+    .call-text span { font-size: .82rem; color: #bbb; }
+    .phil-sub { font-size: .88rem; color: rgba(245,243,238,.62); }
+    .mcard-desc { font-size: .82rem; color: #aaa; }
+    .tcard-quote { font-size: .9rem !important; }
   }
   @media (max-width: 560px) {
     .proc-grid { grid-template-columns: 1fr; }
@@ -431,6 +479,28 @@
       </ul>
       <div class="pprice">$140 <span>CAD / month</span></div>
       <div class="pprice-note">3-month minimum · cancel anytime after</div>
+
+      <button class="pexpand-btn" onclick="toggleExpand(this)">
+        What your journey looks like <span class="arrow">▾</span>
+      </button>
+      <div class="pexpand-content">
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 1 — Baseline</div>
+          <p>We analyze your first match video and build your statistical profile. <strong>Session 1:</strong> we identify your 3 highest-impact areas and set the development plan. <strong>Session 2:</strong> first tactical work — positioning, reading the set, decision triggers specific to your position.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 2 — Building</div>
+          <p>Second match analysis — we measure what changed and what didn't. <strong>Sessions 3 & 4:</strong> deeper tactical layer, game-situation training, and the mental habits that separate reactive players from decisive ones. You start to see the game differently.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 3 — Competing</div>
+          <p>By now you have a system. <strong>Sessions 5 & 6:</strong> competition preparation, opponent reading, and pressure-situation protocols. First bimonthly review — we adjust the plan based on your actual pace of progress. University recruiting guidance begins if applicable.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Beyond Month 3</div>
+          <p>Every two months the plan is reviewed and raised. Each cycle adds a new layer — physical, tactical, or mental — depending on where you are. Athletes who stay for a full season show measurable changes in their statistical profile and how their coaches see them.</p>
+        </div>
+      </div>
     </div>
 
     <!-- 02 -->
@@ -449,18 +519,40 @@
       </ul>
       <div class="pprice">$80 <span>CAD / month</span></div>
       <div class="pprice-note">Groups of 3 to 12 coaches</div>
+
+      <button class="pexpand-btn" onclick="toggleExpand(this)">
+        What your journey looks like <span class="arrow">▾</span>
+      </button>
+      <div class="pexpand-content">
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 1 — Systems & Practice Design</div>
+          <p><strong>Session 1:</strong> We map your current system — what you run, why, and what's breaking down. You submit a video of one of your practices and receive a detailed analysis before session 2. <strong>Session 2:</strong> Practice design overhaul — how to create game-like training that actually transfers to match performance. You leave with 3 drills redesigned.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 2 — Tactical Framework</div>
+          <p><strong>Session 3:</strong> Offensive system — attack distribution, setter decision-making, tempo management. <strong>Session 4:</strong> Defensive systems — reading the attack, block-defence coordination, libero integration. Between sessions you have access to the drill library and the group channel to ask questions as they come up during your week.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 3 — Coaching the Coach</div>
+          <p><strong>Session 5:</strong> Feedback methodology — how to correct without interrupting learning. Constraints-led training and how to use it. <strong>Session 6:</strong> Competition preparation — scouting opponents, managing game situations, communicating with athletes under pressure. By now your practice looks fundamentally different.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Ongoing</div>
+          <p>The group becomes a peer network. Coaches share match videos, discuss problems, and learn from each other's situations — with Gustavo moderating and adding the international perspective. Many coaches stay for a full season and bring in their club director for the consulting package.</p>
+        </div>
+      </div>
     </div>
 
     <!-- 03 -->
     <div class="pcard">
       <div class="pnum">03</div>
-      <div class="ptag">Clubs &amp; Organizations</div>
-      <div class="pname">Club Program Consulting</div>
-      <p class="pdesc">Strategic consulting for clubs that want a real development pathway — methodology, staff formation, performance systems, and seasonal planning. Fully remote. Includes full access to Coach Mentorship for your entire coaching staff.</p>
+      <div class="ptag">Clubs · Universities &amp; Organizations</div>
+      <div class="pname">Club & University Program Consulting</div>
+      <p class="pdesc">Strategic consulting for clubs and university programmes that want a real development pathway — methodology, staff formation, performance systems, and seasonal planning. Fully remote. Includes full access to Coach Mentorship for your entire coaching staff.</p>
       <ul class="pinc">
         <li>Full program audit &amp; methodology review</li>
         <li>Custom development pathway by age group</li>
-        <li>Coach Mentorship included for all club coaches</li>
+        <li>Coach Mentorship included for all coaches (club or university staff)</li>
         <li>Staff training sessions (Zoom)</li>
         <li>Seasonal planning framework</li>
         <li>Match &amp; training video analysis</li>
@@ -468,6 +560,28 @@
       </ul>
       <div class="pprice">From $1,400 <span>CAD / project</span></div>
       <div class="pprice-note">Custom quote after discovery call</div>
+
+      <button class="pexpand-btn" onclick="toggleExpand(this)">
+        What your journey looks like <span class="arrow">▾</span>
+      </button>
+      <div class="pexpand-content">
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Week 1–2 — Programme Audit</div>
+          <p>We start with a full diagnostic: current age-group structure, training methodology, staff formation, and competitive results. You submit match videos and training sessions. The output is an <strong>honest assessment of what's working and what isn't</strong> — not a polite summary.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Week 3–4 — Development Pathway Design</div>
+          <p>We build your club's development framework — age-appropriate objectives from U12 to senior, technical and tactical progressions by category, and the bridge between your development teams and your top squad. <strong>Every coach in the club knows what to teach, when, and why.</strong></p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 2 — Staff Formation</div>
+          <p>Your coaching staff gets full access to the Coach Mentorship programme. Two group Zoom sessions per month — tactical systems, practice design, feedback methodology. The goal: <strong>methodological consistency across every team in the club.</strong> No more each coach doing their own thing.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Season-Long — Analysis & Support</div>
+          <p>Throughout the season: statistical and video analysis of key matches, scouting reports on opponents, and a direct line to Gustavo for questions that come up. <strong>Bimonthly check-ins</strong> to review progress against the plan and adjust where needed. The club grows as a system, not just as individual teams.</p>
+        </div>
+      </div>
     </div>
 
     <!-- 04 FAMILY -->
@@ -475,20 +589,42 @@
       <div class="pnum">04</div>
       <div class="ptag">Families · Complete Package</div>
       <div class="pname">Family Elite Program</div>
-      <p class="pdesc">Everything in Elite Athlete Mentorship — extended for two siblings, with a physical development layer (strength, flexibility, endurance, nutrition, injury prevention) and dedicated parent guidance.</p>
+      <p class="pdesc">Everything in Elite Athlete Mentorship — extended to cover all athletes in your family — one, two, or more — with a physical development layer (strength, flexibility, endurance, nutrition, injury prevention) and dedicated parent guidance.</p>
       <ul class="pinc">
-        <li>2 athletes included (siblings)</li>
+        <li>All athletes in the family included (1, 2, or more)</li>
         <li>4 × Zoom sessions per month (athletes + parent review)</li>
-        <li>Full match video analysis for both athletes</li>
+        <li>Full match video analysis for each athlete</li>
         <li>Age-appropriate physical training plan</li>
         <li>Nutrition guidelines &amp; injury prevention protocols</li>
         <li>Parent education: how to support without pressure</li>
-        <li>University recruiting guidance for both athletes</li>
+        <li>University recruiting guidance for each athlete</li>
         <li>WhatsApp access · monthly family review call</li>
         <li>Minimum 3-month commitment</li>
       </ul>
       <div class="pprice">$400 <span>CAD / month</span></div>
-      <div class="pprice-note">2 siblings · physical plan · parent guidance</div>
+      <div class="pprice-note">all family athletes · physical plan · parent guidance</div>
+
+      <button class="pexpand-btn" onclick="toggleExpand(this)">
+        What your journey looks like <span class="arrow">▾</span>
+      </button>
+      <div class="pexpand-content">
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 1 — Full Family Baseline</div>
+          <p>Each athlete in the family submits a match video. We build individual profiles — different positions, different development needs, same methodology. <strong>Parent session included:</strong> we explain what we see in each athlete, what we're going to work on, and how you can support the process at home without adding pressure.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 2 — Individual + Physical Layer</div>
+          <p>Tactical and physical work runs in parallel. Each athlete gets a plan tailored to their age and position: <strong>strength, flexibility, and endurance progressions</strong> they can follow at home or at the gym, plus nutrition guidelines and injury prevention habits specific to volleyball. The parent monthly review call covers progress, questions, and what to expect next month.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">Month 3 — Competing & Growing Together</div>
+          <p>By month 3 every athlete in the family has a system and the family has a shared language around development. <strong>University recruiting guidance</strong> starts for any athlete at the right age. The bimonthly review adjusts every plan — if one athlete is progressing faster, we raise the bar; if life gets in the way, we adapt.</p>
+        </div>
+        <div class="pexpand-month">
+          <div class="pexpand-month-label">For Parents</div>
+          <p>One of the biggest differences in an athlete's development is how the family talks about the sport at home. We work with parents on: <strong>how to give feedback after a loss, how to talk to the club coach, how to manage the pressure of tryouts and recruiting</strong>, and how to keep the sport enjoyable for as long as possible. That's part of the programme too.</p>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -510,7 +646,7 @@
         <span class="call-time">Min 0–5</span>
         <div class="call-text">
           <strong>We listen first</strong>
-          <span>Tell us about the athlete, the coach, or the club. Goals, current level, biggest challenge. No forms to fill — just a conversation.</span>
+          <span>Tell us about the athlete, the coach, the club, or the university programme. Goals, current level, biggest challenge. No forms to fill — just a conversation.</span>
         </div>
       </div>
       <div class="call-item">
@@ -537,12 +673,41 @@
     </div>
 
     <div class="call-right">
-      <h4>After the call</h4>
-      <p>If you decide to move forward, the next step is simple: <strong>send us one match video.</strong> We build your statistical profile and analyze your game through video breakdown before the first working session — so session one starts with real insight, not assumptions.</p>
-      <p>Within one week of the call you'll have your first session scheduled, your individual analysis ready, and a personalized development proposal in your inbox — with objectives, methodology, and expected milestones clearly defined.</p>
-      <p>From there: the plan runs month by month, with a <strong>bimonthly review</strong> to adjust pace and objectives based on actual progress.</p>
+      <h4>After the call — select who you are</h4>
+
+      <div class="after-tabs">
+        <button class="after-tab active" onclick="showAfter('athlete', this)">Athlete</button>
+        <button class="after-tab" onclick="showAfter('coach', this)">Coach</button>
+        <button class="after-tab" onclick="showAfter('club', this)">Club / University</button>
+        <button class="after-tab" onclick="showAfter('family', this)">Family</button>
+      </div>
+
+      <div id="after-athlete" class="after-panel active">
+        <p>The next step is simple: <strong>send us one match video.</strong> We build your statistical profile and break down your game through video analysis before the first session — so we start with real data, not assumptions.</p>
+        <p>Within one week you'll have your first session scheduled, your individual analysis ready, and a personalized development proposal in your inbox — objectives, methodology, and expected milestones clearly defined.</p>
+        <p>From there: the plan runs month by month, with a <strong>bimonthly review</strong> to adjust pace and raise the bar based on your actual progress.</p>
+      </div>
+
+      <div id="after-coach" class="after-panel">
+        <p>The next step: <strong>send us a video of one of your practices or a recent match.</strong> We analyze it before the first session — what your team is doing well, what's breaking down, and where the biggest tactical gaps are.</p>
+        <p>Within one week you'll have your first group session scheduled and a coaching diagnosis in your inbox — what we'll work on in the first 3 months and why.</p>
+        <p>From there: two sessions per month with the group, a drill library you can use immediately, and a <strong>bimonthly review</strong> of your coaching development — not just your team's results.</p>
+      </div>
+
+      <div id="after-club" class="after-panel">
+        <p>The next step: <strong>send us your current programme structure</strong> — age groups, coaching staff, training schedules, and recent competitive results. We review it before the first working session.</p>
+        <p>Within one week you'll have a programme audit scheduled and a written diagnostic in your inbox — an honest assessment of what your club is doing well and where the structural gaps are.</p>
+        <p>From there: we build the development pathway, onboard your coaching staff into the mentorship programme, and set up the <strong>season-long analysis and support system</strong> — with bimonthly check-ins to track progress against the plan.</p>
+      </div>
+
+      <div id="after-family" class="after-panel">
+        <p>The next step: <strong>each athlete in the family sends a match video.</strong> We build individual profiles for each athlete — different positions, different development needs — and prepare a family session before the first working call.</p>
+        <p>Within one week you'll have the first sessions scheduled for each athlete, individual analyses ready, and a family development proposal in your inbox — including the physical training plan and what we'll cover in the parent sessions.</p>
+        <p>From there: the plan runs for all athletes in parallel, with a <strong>monthly family review call</strong> and a bimonthly adjustment based on each athlete's pace of progress.</p>
+      </div>
+
       <div class="call-cta-box">
-        <p>The call is free, 20 minutes, and happens on Zoom. You choose the time. If there's no fit, you'll at least leave with a clearer picture of what your development should look like.</p>
+        <p>The call is free, 20 minutes, on Zoom. You choose the time. No commitment before that conversation.</p>
         <a class="btn-gold" href="https://calendly.com/castillovolleyball" target="_blank" rel="noopener" style="font-size:.72rem;padding:.75rem 1.6rem;">Book your free call →</a>
       </div>
     </div>
@@ -554,37 +719,37 @@
       <div class="pstep-bg">1</div>
       <div class="pstep-tag"><span class="circle">1</span> Step 1</div>
       <div class="pstep-title">Book a free 20-min call</div>
-      <div class="pstep-desc">We talk about your goals, current level, and which program fits best. Honest conversation — no pitch, no pressure.</div>
+      <div class="pstep-desc">Whether you're an athlete, a coach, a club director, or a parent — we start with a conversation. You tell us where you are and what you're trying to build. No pitch, no pressure.</div>
     </div>
     <div class="pstep">
       <div class="pstep-bg">2</div>
       <div class="pstep-tag"><span class="circle">2</span> Step 2</div>
-      <div class="pstep-title">Send your match video</div>
-      <div class="pstep-desc">One full match (athletes) or training session (coaches). We build individual statistics and break down your game through video analysis before we meet — so the first session starts with real data.</div>
+      <div class="pstep-title">Send us your material</div>
+      <div class="pstep-desc">Athletes send a match video. Coaches send a practice or game session. Clubs send their programme structure. Families send a match video for each athlete. We analyze everything before we meet — so the first session starts with real data, not assumptions.</div>
     </div>
     <div class="pstep">
       <div class="pstep-bg">3</div>
       <div class="pstep-tag"><span class="circle">3</span> Step 3</div>
-      <div class="pstep-title">Receive your work proposal</div>
-      <div class="pstep-desc">A tailored development proposal arrives in your inbox — objectives, methodology, timelines, and expected milestones. You decide if you move forward.</div>
+      <div class="pstep-title">Receive your proposal</div>
+      <div class="pstep-desc">A tailored proposal arrives in your inbox — specific to you, your role, and your context. Objectives, methodology, timeline, and expected milestones. You review it and decide if you want to move forward.</div>
     </div>
     <div class="pstep">
       <div class="pstep-bg">4</div>
       <div class="pstep-tag"><span class="circle">4</span> Step 4</div>
       <div class="pstep-title">First session within 1 week</div>
-      <div class="pstep-desc">We review the analysis together, identify the 3 highest-impact areas, and lock in your first monthly plan. The work starts immediately.</div>
+      <div class="pstep-desc">We go through the analysis together, identify the highest-impact areas, and lock in the plan. Athletes get their individual roadmap. Coaches get their first tactical framework. Clubs get their programme audit. Families get the full picture for every athlete in the household. The work starts immediately.</div>
     </div>
     <div class="pstep">
       <div class="pstep-bg">5</div>
       <div class="pstep-tag"><span class="circle">5</span> Step 5</div>
-      <div class="pstep-title">Train. Play. Review. Repeat.</div>
-      <div class="pstep-desc">Each month adds a new layer — video analysis, tactical adjustments, physical progressions. The game gets clearer and results compound over time.</div>
+      <div class="pstep-title">Work. Review. Grow. Repeat.</div>
+      <div class="pstep-desc">Each month adds a new layer. Athletes develop their tactical IQ and physical game. Coaches build their system and refine their practice design. Clubs gain methodological consistency across all teams. Families see every athlete grow — and understand exactly why.</div>
     </div>
     <div class="pstep pstep-last">
       <div class="pstep-bg">6</div>
       <div class="pstep-tag"><span class="circle">6</span> Step 6</div>
       <div class="pstep-title">Bimonthly plan adjustment</div>
-      <div class="pstep-desc">Every two months we review progress against the original objectives. Advancing faster? We raise the bar. Something shifted? We adapt. The plan always fits where you actually are.</div>
+      <div class="pstep-desc">Every two months we review progress against the original objectives — for every programme, every segment. Advancing faster than expected? We raise the bar. Something shifted? We adapt. The plan always fits where you actually are, not where we assumed you'd be.</div>
     </div>
   </div>
 </section>
@@ -602,7 +767,7 @@
     <div class="fwcard">
       <div class="fwicon">👨‍👩‍👧‍👦</div>
       <div class="fwtitle">Families</div>
-      <div class="fwdesc">Parents investing in two athletes — with real structure, physical development, nutrition, injury prevention, and guidance on how to support without adding pressure.</div>
+      <div class="fwdesc">Parents investing in their athletes — one, two, or more — with real structure, physical development, nutrition, injury prevention, and guidance on how to support without adding pressure.</div>
     </div>
     <div class="fwcard">
       <div class="fwicon">📋</div>
@@ -612,8 +777,59 @@
     <div class="fwcard">
       <div class="fwicon">🏛️</div>
       <div class="fwtitle">Volleyball Clubs</div>
-      <div class="fwdesc">Directors and technical coordinators who want a coherent development pathway — from youth to elite — not just age-group teams running independent programs.</div>
+      <div class="fwdesc">Club directors, athletic directors, and university coaching staffs who want a coherent development pathway — from youth to elite — not just age-group teams running independent programs.</div>
     </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="slabel">What People Say</div>
+  <h2 class="stitle">RESULTS SPEAK.</h2>
+  <div class="tgrid">
+
+    <div class="tcard">
+      <div class="tcard-quote">"Gustavo has made a meaningful impact across our entire volleyball community. From building incredible connections with our youngest athletes to working with our high-performance players, he brought passion, knowledge, and professionalism to every session. He has also been a valued mentor and resource for both our developing and experienced coaches."</div>
+      <div class="tcard-author">Club Coach & President</div>
+      <div class="tcard-role">Volleyball Club · BC, Canada</div>
+    </div>
+
+    <div class="tcard">
+      <div class="tcard-quote">"Even though Gustavo came onto the team on short notice, he had a huge impact right away. He didn't just give feedback — he changed the entire way we do things, how we run practice, and how we approach games. You can see the change pretty much instantly. He helped me grow individually and helped the team turn a failing season into one of the most successful ones in program history."</div>
+      <div class="tcard-author">Phillip</div>
+      <div class="tcard-role">University Outside Hitter · BC, Canada</div>
+    </div>
+
+    <div class="tcard">
+      <div class="tcard-quote">"We are in a better place now than we were a year ago. Gustavo made an impact with the club, the coaches, and the players. I'm excited to have a new volleyball friend who I respect deeply — for the person he is and the knowledge he has for our sport."</div>
+      <div class="tcard-author">Chris</div>
+      <div class="tcard-role">Club Coach & Vice President · BC, Canada</div>
+    </div>
+
+    <div class="tcard">
+      <div class="tcard-quote">"Even in my 4th and final year I still learned so much being coached by Gus. Very intelligent and experienced coach. Listen to his analogies well — that's where the gold is. That's how it all makes sense."</div>
+      <div class="tcard-author">Emmanuel</div>
+      <div class="tcard-role">University Middle Blocker · 4th Year Athlete</div>
+    </div>
+
+    <div class="tcard">
+      <div class="tcard-quote">"I trained with Gustavo this year and learned a lot about the technical aspects of each skill — specifically my hand contact during spiking and float serving. This helped me improve my offence and my float serve placement significantly."</div>
+      <div class="tcard-author">Carter</div>
+      <div class="tcard-role">University Outside Hitter · BC, Canada</div>
+    </div>
+
+    <div class="tcard">
+      <div class="tcard-quote">"Thank you for all the help and time you've put in to make us better athletes. Won't be the same without you."</div>
+      <div class="tcard-author">Brock</div>
+      <div class="tcard-role">U15 Club Setter · BC, Canada</div>
+    </div>
+
+    <div class="tcard">
+      <div class="tcard-quote">"Gustavo wants nothing but the best for all the athletes he works with. He gave feedback on areas where he thought I could improve and kept reminding me until I got better. He never gives up on players and will always push you to be better. A great coach — but an even better human being."</div>
+      <div class="tcard-author">Enrico Del Mundo</div>
+      <div class="tcard-role">Libero · Vancouver Island University · BC, Canada</div>
+    </div>
+
   </div>
 </section>
 
@@ -633,5 +849,28 @@
   <div class="fcopy">© 2025 Castillo Volleyball · Buenos Aires, CABA, Argentina</div>
 </footer>
 
+<script>
+function toggleExpand(btn) {
+  const content = btn.nextElementSibling;
+  const isOpen = content.classList.contains('open');
+  const allBtns = btn.closest('.prog-grid').querySelectorAll('.pexpand-btn');
+  allBtns.forEach(b => {
+    b.classList.remove('open');
+    b.nextElementSibling.classList.remove('open');
+  });
+  if (!isOpen) {
+    btn.classList.add('open');
+    content.classList.add('open');
+    setTimeout(() => content.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+  }
+}
+
+function showAfter(id, btn) {
+  document.querySelectorAll('.after-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.after-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('after-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
 </body>
 </html>
